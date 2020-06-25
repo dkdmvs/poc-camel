@@ -1,0 +1,9 @@
+#Properties para o Springboot (tomcat interno)
+server:
+  port: 3040
+
+#Temos que desligar o springMVC isto secalhar da para fazer de outra forma mas agora nao me apetece pensar nisto lol
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration
